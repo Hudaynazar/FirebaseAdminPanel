@@ -28,7 +28,7 @@ Firebase Authentication (Admin giriş/çıkış yönetimi)
 Bu projeyi klonlayın:
 
 git clone https://github.com/Hudaynazar/FirebaseAdminPanel.git
-# Firebase ayarlarını yapın:
+### Firebase ayarlarını yapın:
 
 Firebase projenizi oluşturduktan sonra, dbcon.php dosyasındaki yapılandırmaları kendi Firebase bilgilerinizle değiştirin.
 
