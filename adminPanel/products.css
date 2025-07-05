@@ -1,0 +1,218 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf2fa;
+        }
+        .header {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: start;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .container {
+            margin-left: 280px;
+            overflow: hidden;
+            padding: 6px 30px 10px 30px;
+        }
+        .status{
+            display: flex;
+            justify-content: space-between;
+        }
+        .products{
+            overflow: visible;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 60rem;
+        }
+        .product {
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            margin: 20px 0 20px 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 15px 10px 10px rgba(0, 0, 0.17, 0.17);
+
+        }
+        .product:hover {
+            transform: scale(1.01);
+        }
+        .product h2 {
+            margin: 0 0 10px;
+        }
+        .content0{
+            display: flex;
+            width: 100%;
+        }
+        .content1{
+            margin-left: 5%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .product-content{
+            margin-left: 10%;
+        }
+        .product-content b{
+            
+            font-size: 20px;
+        }
+        .buttons{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            display: flex;
+        }
+        #newProductBtn{
+            margin-bottom: 2%;
+            display: flex;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #274db6e0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            border: 1px solid gray;
+        }
+        #statusTxt{
+            background: #949697a2;
+            color: green;
+        }
+        #edit_btn, #newProductBtn, #statusTxt{
+            height: 43px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 99%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+/* ORDERS.PHP */
+
+        .filterButton {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #274db69f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            border: 1px solid gray;
+        }
+        .filterButton.active{
+            background: #274db6e0;
+        }
+        .filterButton:hover{
+            background: #2848a0e0;
+        }
+        .headerCont{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #detailBtn{
+            height: 39px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .modal-content p, h2{
+            margin-bottom: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                margin-left: 0;
+                padding: 32px;
+            }
+        }
+        @media (max-width: 610px) {
+            .filters{
+                display: flex;
+                flex-direction: column;
+            }
+            .header{
+                font-size: small;
+                text-align: end;
+            }
+            .product{
+                display: flex;
+                flex-direction: column;
+            }
+            .status{
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+        @media (max-width: 420px) {
+            .container{
+                padding: 4px;
+            }
+            
+        }
+        @media (max-width: 350px) {
+            .header{
+                font-size: small;
+                text-align: end;
+            }
+            .product{
+                display: flex;
+                flex-direction: column;
+            }
+            .status{
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+        
